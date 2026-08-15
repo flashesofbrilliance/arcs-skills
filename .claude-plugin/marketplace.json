@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "arcs",
+  "owner": {
+    "name": "flashesofbrilliance",
+    "url": "https://github.com/flashesofbrilliance"
+  },
+  "description": "ARCS / flashesofbrilliance family skills for Claude Code. Each plugin references its own upstream repo (single source of truth) and installs one skill.",
+  "version": "0.1.0",
+  "plugins": [
+    {
+      "name": "rca",
+      "displayName": "Root-Cause Analysis",
+      "source": {
+        "source": "github",
+        "repo": "flashesofbrilliance/rca-skill",
+        "ref": "main"
+      },
+      "description": "On-demand root-cause analysis for a specific error. Use when a build/test/runtime failure is worth structured treatment — diagnosed at the cause, not the symptom.",
+      "license": "MIT",
+      "keywords": ["rca", "debugging", "root-cause", "incident"],
+      "author": { "name": "flashesofbrilliance" }
+    },
+    {
+      "name": "state-sync",
+      "displayName": "State Sync",
+      "source": {
+        "source": "github",
+        "repo": "flashesofbrilliance/state-sync-skill",
+        "ref": "main"
+      },
+      "description": "Scaffolds a committed snapshot.json so any session (local or cloud) restores ground-truth project state cheaply instead of re-deriving it. Run once per project.",
+      "license": "MIT",
+      "keywords": ["state", "snapshot", "handoff", "context"],
+      "author": { "name": "flashesofbrilliance" }
+    },
+    {
+      "name": "token-savings-bank",
+      "displayName": "Token Savings Bank",
+      "source": {
+        "source": "github",
+        "repo": "flashesofbrilliance/token-savings-bank",
+        "ref": "main"
+      },
+      "description": "Choose model tier, batching, inline-vs-subagent, and checkpointing deliberately on large/repetitive/cost-metered coding tasks — without trading away correctness.",
+      "license": "MIT",
+      "keywords": ["budget", "cost", "efficiency", "model-tier"],
+      "author": { "name": "flashesofbrilliance" }
+    },
+    {
+      "name": "fix-toolbar-comments",
+      "displayName": "Fix Toolbar Comments",
+      "source": {
+        "source": "github",
+        "repo": "flashesofbrilliance/fix-toolbar-comments-skill",
+        "ref": "main"
+      },
+      "description": "Fetch open Vercel Toolbar comment threads, implement the requested fixes, commit, deploy to production, and resolve each thread.",
+      "license": "MIT",
+      "keywords": ["vercel", "toolbar", "feedback", "deploy"],
+      "author": { "name": "flashesofbrilliance" }
+    }
+  ]
+}
