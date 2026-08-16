@@ -59,6 +59,19 @@
       "license": "MIT",
       "keywords": ["vercel", "toolbar", "feedback", "deploy"],
       "author": { "name": "flashesofbrilliance" }
+    },
+    {
+      "name": "resume-tailor",
+      "displayName": "Resume Tailor",
+      "source": {
+        "source": "github",
+        "repo": "flashesofbrilliance/resume-tailor-skill",
+        "ref": "main"
+      },
+      "description": "Tailor a resume + matching cover letter to a specific role from your real evidence. Honesty-graded and falsifier-gated (refuses to state what it can't defend), lead-with-strengths projected, print-safe with an ATS-plain companion, and run through an adversarial pre-send gauntlet.",
+      "license": "MIT",
+      "keywords": ["resume", "cover-letter", "ats", "job-search", "honesty", "falsifier"],
+      "author": { "name": "flashesofbrilliance" }
     }
   ]
 }
