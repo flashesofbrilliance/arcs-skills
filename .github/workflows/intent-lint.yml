@@ -1,0 +1,29 @@
+name: intent-lint
+# Reusable: every flashesofbrilliance repo calls this to check its AGENTS.md intent block.
+# Lives in a PUBLIC repo on purpose: private callers can use a public reusable workflow and
+# read its script with no stored token. Rule + template: tools/intent_lint.py docstring.
+#
+# Caller (copy into <repo>/.github/workflows/intent.yml):
+#   on: { push: { branches: [main] }, pull_request: {}, schedule: [{ cron: "23 13 * * 1" }], workflow_dispatch: {} }
+#   jobs: { intent: { uses: flashesofbrilliance/arcs-skills/.github/workflows/intent-lint.yml@main } }
+on:
+  workflow_call:
+    inputs:
+      max-age:
+        description: "Days before Last verified counts as stale (archived repos are exempt)"
+        type: number
+        default: 90
+permissions:
+  contents: read
+jobs:
+  intent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4          # the CALLER's repo
+      - uses: actions/checkout@v4          # this repo's script, read-only, public
+        with:
+          repository: flashesofbrilliance/arcs-skills
+          ref: main
+          path: .intent-lint
+          sparse-checkout: tools
+      - run: python3 .intent-lint/tools/intent_lint.py . --max-age ${{ inputs.max-age }}

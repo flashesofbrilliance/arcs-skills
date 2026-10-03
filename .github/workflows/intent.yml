@@ -1,0 +1,15 @@
+name: intent
+on:
+  push: { branches: [main] }
+  pull_request: {}
+  schedule: [{ cron: "23 13 * * 1" }]   # weekly: a repo goes stale without any commit
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  self-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/intent_lint.py --self-test
+      - run: python3 tools/intent_lint.py .
