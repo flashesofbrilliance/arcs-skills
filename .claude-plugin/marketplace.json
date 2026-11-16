@@ -16,17 +16,10 @@
         "repo": "flashesofbrilliance/rca-skill",
         "ref": "main"
       },
-      "description": "On-demand root-cause analysis for a specific error. Use when a build/test/runtime failure is worth structured treatment \u2014 diagnosed at the cause, not the symptom.",
+      "description": "On-demand root-cause analysis for a specific error. Use when a build/test/runtime failure is worth structured treatment — diagnosed at the cause, not the symptom.",
       "license": "MIT",
-      "keywords": [
-        "rca",
-        "debugging",
-        "root-cause",
-        "incident"
-      ],
-      "author": {
-        "name": "flashesofbrilliance"
-      }
+      "keywords": ["rca", "debugging", "root-cause", "incident"],
+      "author": { "name": "flashesofbrilliance" }
     },
     {
       "name": "state-sync",
@@ -38,15 +31,8 @@
       },
       "description": "Scaffolds a committed snapshot.json so any session (local or cloud) restores ground-truth project state cheaply instead of re-deriving it. Run once per project.",
       "license": "MIT",
-      "keywords": [
-        "state",
-        "snapshot",
-        "handoff",
-        "context"
-      ],
-      "author": {
-        "name": "flashesofbrilliance"
-      }
+      "keywords": ["state", "snapshot", "handoff", "context"],
+      "author": { "name": "flashesofbrilliance" }
     },
     {
       "name": "token-savings-bank",
@@ -56,17 +42,10 @@
         "repo": "flashesofbrilliance/token-savings-bank",
         "ref": "main"
       },
-      "description": "Choose model tier, batching, inline-vs-subagent, and checkpointing deliberately on large/repetitive/cost-metered coding tasks \u2014 without trading away correctness.",
+      "description": "Choose model tier, batching, inline-vs-subagent, and checkpointing deliberately on large/repetitive/cost-metered coding tasks — without trading away correctness.",
       "license": "MIT",
-      "keywords": [
-        "budget",
-        "cost",
-        "efficiency",
-        "model-tier"
-      ],
-      "author": {
-        "name": "flashesofbrilliance"
-      }
+      "keywords": ["budget", "cost", "efficiency", "model-tier"],
+      "author": { "name": "flashesofbrilliance" }
     },
     {
       "name": "fix-toolbar-comments",
@@ -78,15 +57,8 @@
       },
       "description": "Fetch open Vercel Toolbar comment threads, implement the requested fixes, commit, deploy to production, and resolve each thread.",
       "license": "MIT",
-      "keywords": [
-        "vercel",
-        "toolbar",
-        "feedback",
-        "deploy"
-      ],
-      "author": {
-        "name": "flashesofbrilliance"
-      }
+      "keywords": ["vercel", "toolbar", "feedback", "deploy"],
+      "author": { "name": "flashesofbrilliance" }
     },
     {
       "name": "resume-tailor",
@@ -98,17 +70,8 @@
       },
       "description": "Tailor a resume + matching cover letter to a specific role from your real evidence. Honesty-graded and falsifier-gated (refuses to state what it can't defend), lead-with-strengths projected, print-safe with an ATS-plain companion, and run through an adversarial pre-send gauntlet.",
       "license": "MIT",
-      "keywords": [
-        "resume",
-        "cover-letter",
-        "ats",
-        "job-search",
-        "honesty",
-        "falsifier"
-      ],
-      "author": {
-        "name": "flashesofbrilliance"
-      }
+      "keywords": ["resume", "cover-letter", "ats", "job-search", "honesty", "falsifier"],
+      "author": { "name": "flashesofbrilliance" }
     },
     {
       "name": "cruft-sweep",
@@ -120,14 +83,8 @@
       },
       "description": "Survey, classify and safely reclaim stale git worktrees. Every prune bundles the branch first; a salvage check flags unique claims before removal.",
       "license": "MIT",
-      "keywords": [
-        "git",
-        "worktrees",
-        "cleanup"
-      ],
-      "author": {
-        "name": "flashesofbrilliance"
-      }
+      "keywords": ["git", "worktrees", "cleanup"],
+      "author": { "name": "flashesofbrilliance" }
     },
     {
       "name": "claims-skeptic",
@@ -139,14 +96,8 @@
       },
       "description": "Agent that proves or disproves each factual claim in a document against the live repo: VERIFIED, FALSE or UNVERIFIABLE, with evidence.",
       "license": "MIT",
-      "keywords": [
-        "verification",
-        "review",
-        "docs"
-      ],
-      "author": {
-        "name": "flashesofbrilliance"
-      }
+      "keywords": ["verification", "review", "docs"],
+      "author": { "name": "flashesofbrilliance" }
     }
   ]
 }
