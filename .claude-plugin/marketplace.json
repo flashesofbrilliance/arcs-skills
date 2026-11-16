@@ -72,6 +72,32 @@
       "license": "MIT",
       "keywords": ["resume", "cover-letter", "ats", "job-search", "honesty", "falsifier"],
       "author": { "name": "flashesofbrilliance" }
+    },
+    {
+      "name": "cruft-sweep",
+      "displayName": "Cruft Sweep",
+      "source": {
+        "source": "github",
+        "repo": "flashesofbrilliance/cruft-sweep-skill",
+        "ref": "main"
+      },
+      "description": "Survey, classify and safely reclaim stale git worktrees. Every prune bundles the branch first; a salvage check flags unique claims before removal.",
+      "license": "MIT",
+      "keywords": ["git", "worktrees", "cleanup"],
+      "author": { "name": "flashesofbrilliance" }
+    },
+    {
+      "name": "claims-skeptic",
+      "displayName": "Claims Skeptic",
+      "source": {
+        "source": "github",
+        "repo": "flashesofbrilliance/claims-skeptic-skill",
+        "ref": "main"
+      },
+      "description": "Agent that proves or disproves each factual claim in a document against the live repo: VERIFIED, FALSE or UNVERIFIABLE, with evidence.",
+      "license": "MIT",
+      "keywords": ["verification", "review", "docs"],
+      "author": { "name": "flashesofbrilliance" }
     }
   ]
 }

@@ -38,6 +38,8 @@ what you want and attach your inputs.
 | `/plugin install state-sync@arcs` | Scaffolds a committed `snapshot.json` so sessions restore ground-truth state cheaply. | [state-sync-skill](https://github.com/flashesofbrilliance/state-sync-skill) |
 | `/plugin install token-savings-bank@arcs` | Deliberate model-tier / batching / checkpointing on large or cost-metered tasks. | [token-savings-bank](https://github.com/flashesofbrilliance/token-savings-bank) |
 | `/plugin install fix-toolbar-comments@arcs` | Resolve Vercel Toolbar feedback threads end to end (fix, deploy, resolve). | [fix-toolbar-comments-skill](https://github.com/flashesofbrilliance/fix-toolbar-comments-skill) |
+| `/plugin install cruft-sweep@arcs` | Survey and safely reclaim stale git worktrees; bundles every branch before removing anything. | [cruft-sweep-skill](https://github.com/flashesofbrilliance/cruft-sweep-skill) |
+| `/plugin install claims-skeptic@arcs` | Agent that checks each factual claim in a document against the live repo. | [claims-skeptic-skill](https://github.com/flashesofbrilliance/claims-skeptic-skill) |
 
 ## No plugin? Self-service DIY
 
